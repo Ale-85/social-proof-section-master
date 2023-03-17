@@ -1,0 +1,173 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(images/bg-pattern-top-desktop.svg),
+    url(images/bg-pattern-bottom-desktop.svg);
+  background-repeat: no-repeat;
+  font-family: "League Spartan", sans-serif;
+}
+
+.container {
+  width: 85%;
+  margin: 5em auto;
+}
+
+#ratings {
+  display: flex;
+  color: hsl(300, 43%, 22%);
+}
+
+header {
+  width: 50%;
+  padding: 0 5em 2em 0;
+}
+
+h1 {
+  font-size: 3.5rem;
+  margin-top: 0;
+}
+
+header p {
+  color: hsl(303, 10%, 53%);
+  line-height: 1.5;
+}
+
+.stars {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.card-star {
+  background-color: hsl(300, 24%, 96%);
+  padding: 1em;
+  border-radius: 5px;
+}
+
+.card-star p {
+  display: inline;
+  margin-left: 2em;
+}
+
+.rate-1 {
+  align-self: start;
+  padding-right: 3em;
+}
+
+.rate-2 {
+  align-self: center;
+}
+
+.rate-3 {
+  align-self: end;
+  padding-right: 3em;
+}
+
+#reviews {
+  display: flex;
+  height: 18em;
+  gap: 1.5em;
+}
+
+.card-review {
+  background-color: hsl(300, 43%, 22%);
+  color: white;
+  padding: 2em;
+  border-radius: 10px;
+}
+
+.review-1 {
+  align-self: start;
+}
+
+.review-2 {
+  align-self: center;
+}
+
+.review-3 {
+  align-self: end;
+}
+
+.image-review {
+  width: 15%;
+  border-radius: 50%;
+  margin: 0.5em 1em auto 0;
+  float: left;
+}
+
+h2 {
+  margin: 0.5em auto;
+  font-size: 1rem;
+}
+
+h3 {
+  margin-left: 2.5em;
+  margin-top: 0;
+  color: hsl(333, 80%, 67%);
+  font-size: 1rem;
+}
+
+.card-review p {
+  margin-top: 2em;
+  line-height: 1.5;
+  margin-top: 2em;
+}
+
+.attribution {
+  display: none;
+}
+
+@media (max-width: 750px) {
+  * {
+    box-sizing: content-box;
+  }
+
+  body {
+    background-image: none;
+  }
+
+  .container {
+    width: 90%;
+  }
+  #ratings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  #reviews {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 35em;
+  }
+
+  header {
+    width: 100%;
+  }
+
+  .stars {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 2em;
+    padding-right: 4.5em;
+  }
+
+  .rate-1,
+  .rate-2,
+  .rate-3 {
+    align-self: center;
+    width: 90%;
+    padding: 1em 1em;
+  }
+
+  .image-review {
+    margin-top: 0;
+  }
+}
